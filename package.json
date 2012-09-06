@@ -1,7 +1,7 @@
 {
   "name": "hashi",
   "version": "0.0.1",
-  "description": "an AMD polyfill for hashchange",
+  "description": "an AMD polyfill for the hashchange event",
   "scripts": {
     "prepublish": "uglifyjs -o hashi.min.js lib/index.js"
   },
