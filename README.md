@@ -1,4 +1,4 @@
-Hashi is an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) module for the [hashchange event](https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange) that works for any browser (polyfill).
+Hashi is an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) module for the [hashchange event](https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange) that works in any browser (polyfill).
 
 # Install
 
