@@ -1,4 +1,4 @@
-define(["../lib/index.js", "/test/vendor/chai.js"], function(hashi, chai){
+define(["hashi", "/test/vendor/chai.js"], function(hashi, chai){
   var expect = chai.expect;
 
   describe("hashi", function(){

@@ -1,0 +1,17 @@
+{
+  "JAVASCRIPT": {
+    "DIST_DIR": "./", 
+    "hashi": [
+      "./src/copyright.js", 
+      "./src/index.js"
+    ]
+  }, 
+  "JSHINT_OPTS": {
+    "evil": true,
+    "regexdash": true,
+    "browser": true,
+    "wsh": true,
+    "trailing": true,
+    "sub": true
+  }
+}
