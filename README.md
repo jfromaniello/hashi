@@ -24,7 +24,7 @@ hashi.removeListener(shout);
 hashi.removeAllListeners();
 ```
 
-### Supports AMD (require.js)
+### AMD support
 
 ```javascript
 require(["hashi"], function(hashi){
