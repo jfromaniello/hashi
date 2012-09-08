@@ -5,8 +5,23 @@ It also works as an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) module an
 
 ```javascript
 hashi.addListener(function(){
-	alert("hash changed!");
-})
+  alert("hash changed!");
+});
+```
+
+## Remove listener
+
+```javascript
+function myListener(e){
+  alert("changed from " + e.oldURL + " to " + e.newURL);
+}
+hashi.removeListener(myListener);
+```
+
+Also you can remove all listener added with hashi:
+
+```javascript
+hashi.removeAllListeners();
 ```
 
 # Usage with AMD (require.js)
@@ -17,21 +32,6 @@ require(["hashi"], function(hashi){
     alert("changed from " + e.oldURL + " to " + e.newURL);
   })
 });
-```
-
-## Remove listener
-
-```javascript
-function myListener(e){
-alert("changed from " + e.oldURL + " to " + e.newURL);
-}
-hashi.removeListener(myListener);
-```
-
-Also you can remove all listener added with hashi:
-
-```javascript
-hashi.removeAllListeners();
 ```
 
 # Install with JAM
