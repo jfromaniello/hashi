@@ -1,30 +1,30 @@
 Hashi is an small polyfill for the [hashchange event](https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange).
 It also works as an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) module and can be installed from [jam](http://jamjs.org).
 
-# Usage
+# API
+
+Add hashi.js or hashi.min.js to your html page. Then you can use as follows:
 
 ```javascript
-hashi.addListener(function(){
+function shout(){
   alert("hash changed!");
-});
+}
+hashi.addListener(shout);
 ```
 
-## Remove listener
+### Remove listener
 
 ```javascript
-function myListener(e){
-  alert("changed from " + e.oldURL + " to " + e.newURL);
-}
-hashi.removeListener(myListener);
+hashi.removeListener(shout);
 ```
 
-Also you can remove all listener added with hashi:
+### Remove all listeners
 
 ```javascript
 hashi.removeAllListeners();
 ```
 
-# Usage with AMD (require.js)
+### Supports AMD (require.js)
 
 ```javascript
 require(["hashi"], function(hashi){
